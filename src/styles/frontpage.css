@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.landpage {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./img/money.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+}
+
+.main-button{
+  background: linear-gradient(to right, #B8860B, #FFD700); /* Gold gradient */
+  color: black; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px; /* Rounded corners */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-button:hover {
+  background: linear-gradient(to right, #DAA520, #FFD700); /* Lighter gold gradient on hover */
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+  .landpage {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
