@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { fetchExpenditures, createExpenditure } from './api';
 import months from './months'
+import './styles/expenditures.css'
 
 const Expenditures = ({ token }) => {
   const [expenditures, setExpenditures] = useState([]);
@@ -48,12 +49,12 @@ const Expenditures = ({ token }) => {
   };
 
   return (
-    <div>
-      <div>
+    <div className='expenditures-page'>
+      <div className='months-area'>
         <h2>Months</h2>
-        <div>
+        <div className='grid-months'>
           {months.map((m)=> (
-            <button onClick={() => handleFilterMonth(m.date)} key={m.date}>{m.name}</button>
+            <button className='button-month' onClick={() => handleFilterMonth(m.date)} key={m.date}>{m.name}</button>
           ))};
         </div>
       </div>

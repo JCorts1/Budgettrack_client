@@ -1,0 +1,41 @@
+.expenditures-page {
+  backdrop-filter: blur(10px); /* Blurs the background behind the element */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.months-area {
+  color: white;
+}
+
+.button-month {
+  background-color: black;
+  color: white;
+  border: 1px solid #626262;
+}
+
+.button-month:hover {
+  background: linear-gradient(to right, #DAA520, #FFD700); /* Lighter gold gradient on hover */
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+  border: 0;
+  transition: 1s ease;
+}
+@media (max-width: 600px) {
+  .expenditures-page {
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .grid-months {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+  }
+}
