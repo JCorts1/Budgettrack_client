@@ -13,6 +13,10 @@
   border: 1px solid #626262;
 }
 
+.expenditures-area {
+  color: #fff;
+}
+
 .button-month:hover {
   background: linear-gradient(to right, #DAA520, #FFD700); /* Lighter gold gradient on hover */
   transform: scale(1.1); /* Slight zoom on hover */
@@ -20,6 +24,18 @@
   border: 0;
   transition: 1s ease;
 }
+
+.expenditures-form {
+  margin-top: 20px;
+}
+
+.expenditures-form input {
+  width: 60%;
+  height: 30px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
 @media (max-width: 600px) {
   .expenditures-page {
     width: 95%;

@@ -58,8 +58,9 @@ const Expenditures = ({ token }) => {
           ))};
         </div>
       </div>
+      <div className='expenditures-area'>
       <h2>Expenditures</h2>
-      <form onSubmit={handleSubmit}>
+      <form className='expenditures-form' onSubmit={handleSubmit}>
         <input
           type="number"
           value={amount}
@@ -86,6 +87,7 @@ const Expenditures = ({ token }) => {
         ))}
       </ul>
       <br />
+      </div>
     </div>
   );
 };
